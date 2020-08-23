@@ -1,0 +1,71 @@
+nav{
+    background-color: #ffbe0b;
+  }
+  #aaa{
+    font-size: 30px;
+  }
+  /* #navbarSupportedContent{
+    text-align: left;
+  } */
+  *{
+    color: #f9c74f;
+    background-color: black;
+  }
+  button{
+    background-color:#f9c74f;
+    color:black;
+  }
+  body{
+    background-color: black;
+  }
+  .container{
+    text-align: center;
+  }
+  .createNote{
+    margin-top:10px;
+    margin-left: 160px;
+    margin-right: 160px;
+    margin-bottom: 10px;
+    border-style: solid;
+    border-width: thin;
+    border-color:#f9c74f ;
+  }
+  .updateNote{
+    margin-top:10px;
+    margin-left: 160px;
+    margin-right: 160px;
+    margin-bottom: 10px;
+    border-style: solid;
+    border-width: thin;
+    border-color:#f9c74f ;
+  }
+  .Viewnotes{
+    margin-top:10px;
+    margin-left: 160px;
+    margin-right: 160px;
+    margin-bottom: 10px;
+    /* border-style: solid;
+    border-width: thin;
+    border-color:#f9c74f ; */
+  }
+  .cardlist{
+    color: #f9c74f;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    border-style: solid;
+    border-width: thin;
+    border-color:#f9c74f ;
+  }
+  #0 {
+    color: #f9c74f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: solid;
+    border-width:thick;
+    border-color:#f9c74f ;
+
+  }

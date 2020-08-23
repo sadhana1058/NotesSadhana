@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Notes</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<link rel="stylesheet" href="FrontPage_master.css">  </head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #ffbe0b;">
+  <a class="navbar-brand" id="aaa" href="#">Notes</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent"  style="background-color: #ffbe0b;">
+    <ul class="navbar-nav mr-auto">      <li class="nav-item active">     <!-- <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> -->
+      </li> </ul>
+  </div>
+</nav>
+<div class="container" >
+<div class="createButton" >
+  <button type="button" class="btn btn-warning"  style="margin:20px;" onclick="myFunction()">Create</button>
+  <button type="button" class="btn btn-warning"  style="margin:20px;"  onclick="myFunct()">delete</button>
+  <button type="button" class="btn btn-warning" style="margin:20px;"  id="readbutton" onclick="getallNotes()">Read Notes</button>
+  <button type="button" class="btn btn-warning" style="margin:20px;" onclick="myFun()">update</button>
+</div>
+<div class="createNote" id="createBlock" style="display:none;">  <br>
+  <form >
+<textarea id="new_title" rows="1" cols="100" style="color:black; background-color:#f9c74f;">Title:</textarea>
+<textarea id="new_description" rows="10" cols="100" style="color:black; background-color:#f9c74f;">description:</textarea>
+<button type="button" class="btn btn-success" style="margin:10px;" onclick="postallNotes()" >Save</button>
+</form>
+</div>
+<div class="updateNote" id="updateBlock" style="display:none;">
+  <label for="objectId">Object Id:</label>
+   <input id="objectId" type="text" style="margin:25px;color:black; background-color:#f9c74f;">
+ <button type="button" class="btn btn-success" style="margin:10px;" onclick="deleteNotes()">DEl</button>
+  </div>
+<div class="Viewnotes">
+  <div class="cardlist">
+    <!-- <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Title: <span id="head"></span></h5>
+          <p class="card-text">
+            description : <span id="describe"></span>
+          </p>
+          <a href="#" class="card-link"></a>
+          <a href="#" class="card-link">Another link</a>
+        </div>
+      </div> -->
+    </div>
+</div>
+
+  </div>
+  <script src="./node_modules/axios/dist/axios.min.js"></script>
+  <!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
+    <script src="Note_script.js"></script>
+
+</body>
+</html>
+
+
